@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Stopping msfrpcd service"
+systemctl stop msfrpcd.service
