@@ -1,0 +1,11 @@
+[Unit]
+Description=msfrpcd
+Wants=openvas-manager.service
+
+[Service]
+Type=simple
+PIDFile=/run/msfrpc.pid
+ExecStart=/usr/bin/msfrpcd -P msf -S
+
+[Install]
+WantedBy=multi-user.target
