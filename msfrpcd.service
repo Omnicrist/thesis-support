@@ -1,11 +1,11 @@
 [Unit]
-Description=msfrpcd
+Description=RPC or JSON-RPC interface to the Metasploit Framework
 Wants=openvas-manager.service
 
 [Service]
 Type=simple
 PIDFile=/run/msfrpc.pid
-ExecStart=/usr/bin/msfrpcd -P msf -S
+ExecStart=/usr/bin/msfrpcd -f -P msf -S
 
 [Install]
 WantedBy=multi-user.target
