@@ -1,7 +1,8 @@
 [Unit]
 Description=Greenbone Security Assistant
 Documentation=man:gsad(8) http://www.openvas.org/
-Wants=openvas-manager.service
+After=redis.service openvas-manager.service
+Requires=redis.service openvas-manager.service
 
 [Service]
 Type=simple
