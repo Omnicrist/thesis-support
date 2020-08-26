@@ -1,7 +1,8 @@
 [Unit]
 Description=Open Vulnerability Assessment System Manager Daemon
 Documentation=man:openvasmd(8) http://www.openvas.org/
-Wants=openvas-scanner.service
+Requires=redis.service
+After=redis.service
 
 [Service]
 Type=forking
