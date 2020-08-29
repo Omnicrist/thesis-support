@@ -1,6 +1,7 @@
 [Unit]
 Description=RPC or JSON-RPC interface to the Metasploit Framework
-Wants=openvas-manager.service
+Requires=openvas-manager.service
+After=openvas-manager.service
 
 [Service]
 Type=simple
