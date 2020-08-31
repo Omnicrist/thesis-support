@@ -1,0 +1,1183 @@
+{
+    "owner": "admin",
+    "hosts": "1",
+    "vulns": "13",
+    "os": "0",
+    "apps": "1",
+    "ssl_certs": "5",
+    "timestamp": "2020-08-30 15:40:10 Coordinated Universal Time (UTC)",
+    "task": {
+        "id": "45d9dad8-19bb-4bb3-8042-46d52cf8413e",
+        "name": "system_discovery",
+        "comment": "comment",
+        "target id": "e4a233d9-6434-4364-9ebc-8a18013b29b7"
+    },
+    "ports": {
+        "212.83.175.116": [
+            {
+                "port": "110/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "3306/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "general/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "995/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "443/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "80/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "53/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "993/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "143/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "22/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            },
+            {
+                "port": "111/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            }
+        ]
+    },
+    "results": {
+        "212.83.175.116": [
+            {
+                "port": "53/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "DNS Server Detection (TCP)",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=A DNS Server is running at this Host.\n  A Name Server translates domain names into IP addresses. This makes it\n  possible for a user to access a website by typing in the domain name instead of\n  the website's actual IP address.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": null
+            },
+            {
+                "port": "143/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "IMAP Server type and version",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the IMAP Server's type and version by connecting to\n  the server and processing the received banner.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Remote IMAP server banner:\n\n* OK Dovecot ready.\n\nThis is probably:\n\n- Dovecot\n\nThe remote IMAP server is announcing the following available CAPABILITIES via an unencrypted connection:\n\nAUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, STARTTLS, THREAD=REFERENCES, UNSELECT"
+            },
+            {
+                "port": "993/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "IMAP Server type and version",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the IMAP Server's type and version by connecting to\n  the server and processing the received banner.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Remote IMAP server banner:\n\n* OK Dovecot ready.\n\nThis is probably:\n\n- Dovecot\n\nThe remote IMAP server is announcing the following available CAPABILITIES via an encrypted connection:\n\nAUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, THREAD=REFERENCES, UNSELECT"
+            },
+            {
+                "port": "3306/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "MySQL/MariaDB Detection",
+                    "family": "Product detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detects the installed version of\n  MySQL/MariaDB.\n\n  Detect a running MySQL/MariaDB by getting the banner, extract the version\n  from the banner.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Detected MySQL\n\nVersion:       5.0.45\nLocation:      3306/tcp\nCPE:           cpe:/a:mysql:mysql:5.0.45\n\nConcluded from version/product identification result:\n5.0.45"
+            },
+            {
+                "port": "111/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Obtain list of all port mapper registered programs via RPC",
+                    "family": "RPC",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script calls the DUMP RPC on the port mapper, to obtain the\n  list of all registered programs.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "These are the registered RPC programs:\n\nRPC program #100000 version 2 'portmapper' (portmap sunrpc rpcbind) on port 111/TCP\n\nRPC program #100024 version 1 'status' on port 679/TCP\n\nRPC program #100000 version 2 'portmapper' (portmap sunrpc rpcbind) on port 111/UDP\n\nRPC program #100024 version 1 'status' on port 676/UDP"
+            },
+            {
+                "port": "995/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "POP3 Server type and version",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the POP3 Server's type and version by connecting to\n  the server and processing the received banner.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Remote POP3 server banner:\n\n+OK Dovecot ready.\n\nThis is probably:\n\n- Dovecot\n\nThe remote POP3 server is announcing the following available CAPABILITIES via an encrypted connection:\n\nCAPA, PIPELINING, RESP-CODES, SASL PLAIN, TOP, UIDL, USER"
+            },
+            {
+                "port": "110/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "POP3 Server type and version",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the POP3 Server's type and version by connecting to\n  the server and processing the received banner.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Remote POP3 server banner:\n\n+OK Dovecot ready.\n\nThis is probably:\n\n- Dovecot\n\nThe remote POP3 server is announcing the following available CAPABILITIES via an unencrypted connection:\n\nCAPA, PIPELINING, RESP-CODES, SASL PLAIN, STLS, TOP, UIDL, USER"
+            },
+            {
+                "port": "111/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "RPC portmapper (TCP)",
+                    "family": "RPC",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script performs detection of RPC portmapper on TCP.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "RPC portmapper is running on this port."
+            },
+            {
+                "port": "22/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "An ssh server is running on this port"
+            },
+            {
+                "port": "3306/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "An unknown service is running on this port.\nIt is usually reserved for MySQL"
+            },
+            {
+                "port": "80/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A web server is running on this port"
+            },
+            {
+                "port": "993/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A TLScustom server answered on this port"
+            },
+            {
+                "port": "995/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A TLScustom server answered on this port"
+            },
+            {
+                "port": "443/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A TLScustom server answered on this port"
+            },
+            {
+                "port": "443/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A web server is running on this port through SSL"
+            },
+            {
+                "port": "143/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "An unknown service is running on this port.\nIt is usually reserved for IMAP"
+            },
+            {
+                "port": "110/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A pop3 server is running on this port"
+            },
+            {
+                "port": "995/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "A pop3 server is running on this port"
+            },
+            {
+                "port": "993/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Services",
+                    "family": "Service detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the\n  remote ports. For instance, it searches for a web server which could listen on another port than\n  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "An unknown service is running on this port through SSL.\nIt is usually reserved for IMAPS"
+            },
+            {
+                "port": "22/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSH Server type and version",
+                    "family": "Product detection",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the SSH Server's type and version by connecting to the server\n  and processing the buffer received.\n\n  This information gives potential attackers additional information about the system they are attacking.\n  Versions and Types should be omitted where possible.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Remote SSH server banner: SSH-2.0-OpenSSH_4.3\nRemote SSH supported authentication: password,publickey\nRemote SSH text/login banner: (not available)\n\nThis is probably:\n\n- OpenSSH\n\nConcluded from remote connection attempt with credentials:\n\nLogin:    OpenVASVT\nPassword: OpenVASVT"
+            },
+            {
+                "port": "443/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Collect and Report Certificate Details",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.\n\n  This data will be used by other tests to verify server certificates.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following certificate details of the remote service were collected.\n\nCertificate details:\nsubject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nsubject alternative names (SAN):\nNone\nissued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nserial ....: 00E626C8245275162C\nvalid from : 2009-06-23 23:53:41 UTC\nvalid until: 2010-06-23 23:53:41 UTC\nfingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7\nfingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B"
+            },
+            {
+                "port": "110/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Collect and Report Certificate Details",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.\n\n  This data will be used by other tests to verify server certificates.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following certificate details of the remote service were collected.\n\nCertificate details:\nsubject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nsubject alternative names (SAN):\nNone\nissued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nserial ....: 00E626C8245275162C\nvalid from : 2009-06-23 23:53:41 UTC\nvalid until: 2010-06-23 23:53:41 UTC\nfingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7\nfingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B"
+            },
+            {
+                "port": "993/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Collect and Report Certificate Details",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.\n\n  This data will be used by other tests to verify server certificates.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following certificate details of the remote service were collected.\n\nCertificate details:\nsubject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nsubject alternative names (SAN):\nNone\nissued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nserial ....: 00E626C8245275162C\nvalid from : 2009-06-23 23:53:41 UTC\nvalid until: 2010-06-23 23:53:41 UTC\nfingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7\nfingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B"
+            },
+            {
+                "port": "995/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Collect and Report Certificate Details",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.\n\n  This data will be used by other tests to verify server certificates.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following certificate details of the remote service were collected.\n\nCertificate details:\nsubject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nsubject alternative names (SAN):\nNone\nissued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nserial ....: 00E626C8245275162C\nvalid from : 2009-06-23 23:53:41 UTC\nvalid until: 2010-06-23 23:53:41 UTC\nfingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7\nfingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B"
+            },
+            {
+                "port": "143/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Collect and Report Certificate Details",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.\n\n  This data will be used by other tests to verify server certificates.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following certificate details of the remote service were collected.\n\nCertificate details:\nsubject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nsubject alternative names (SAN):\nNone\nissued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server\nserial ....: 00E626C8245275162C\nvalid from : 2009-06-23 23:53:41 UTC\nvalid until: 2010-06-23 23:53:41 UTC\nfingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7\nfingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B"
+            },
+            {
+                "port": "general/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: Hostname discovery from server certificate",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=It was possible to discover an additional hostname\n  of this server from its certificate Common or Subject Alt Name.|qod_type=remote_app"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "98",
+                    "type": "remote_app"
+                },
+                "description": "The following additional but not resolvable hostnames were detected:\n\nimap.example.com\nlocalhost.localdomain"
+            },
+            {
+                "port": "143/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: IMAP 'STARTTLS' Command Detection",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "URL:https://tools.ietf.org/html/rfc2595",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks if the remote IMAP server supports SSL/TLS with the 'STARTTLS' command.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "The remote IMAP server supports SSL/TLS with the 'STARTTLS' command.\n\nThe remote IMAP server is announcing the following CAPABILITIES before sending the 'STARTTLS' command:\n\nAUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, STARTTLS, THREAD=REFERENCES, UNSELECT\n\nThe remote IMAP server is announcing the following CAPABILITIES after sending the 'STARTTLS' command:\n\nAUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, THREAD=REFERENCES, UNSELECT"
+            },
+            {
+                "port": "110/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "SSL/TLS: POP3 'STLS' Command Detection",
+                    "family": "SSL and TLS",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "URL:https://tools.ietf.org/html/rfc2595",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks if the remote POP3 server supports SSL/TLS with the 'STLS' command.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "The remote POP3 server supports SSL/TLS with the 'STLS' command.\n\nThe remote POP3 server is announcing the following CAPABILITIES before sending the 'STLS' command:\n\nCAPA, PIPELINING, RESP-CODES, SASL PLAIN, STLS, TOP, UIDL, USER\n\nThe remote POP3 server is announcing the following CAPABILITIES after sending the 'STLS' command:\n\nCAPA, PIPELINING, RESP-CODES, SASL PLAIN, TOP, UIDL, USER"
+            },
+            {
+                "port": "general/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Traceroute",
+                    "family": "General",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|solution=Block unwanted packets from escaping your network.|summary=A traceroute from the scanning server to the target system was\n  conducted. This traceroute is provided primarily for informational value only. In the vast\n  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute\n  contains any private addresses that should not have been publicly visible, then you have an\n  issue you need to correct.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Here is the route from 192.168.1.14 to 212.83.175.116:\n\n192.168.1.14\n109.116.67.1\n83.224.40.126\n83.224.40.125\n83.224.40.225\n83.224.40.229\n185.210.48.25\n* * *\n195.154.2.197\n51.158.3.9\n212.83.175.116"
+            }
+        ]
+    },
+    "results_count": {
+        "full": "0",
+        "filtered": "58",
+        "debug": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "hole": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "info": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "log": {
+            "full": "58",
+            "filtered": "58"
+        },
+        "warning": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "false_positive": {
+            "full": "0",
+            "filtered": "0"
+        }
+    },
+    "max_severity_full": "0.0",
+    "max_severity_filtered": "0.0",
+    "vuln_details": [
+        {
+            "name": "Cert:D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E",
+            "value": "x509:MIIEDjCCA3egAwIBAgICC0EwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTA5MDYwMjE2MTMzMFoXDTEwMDYwMjE2MTMzMFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDURVDZXpl19apuqss3n2fvwiw0/vTQoYizWQ3lOhKp8ljYAIV3EUpXlCdrYSrCTlg3H4Tg6G7Sdm2nkTu+zzydM8ceBl8FVUuHYcAjI+nGmc2vk5PGrWddnWcVqmb/Hg0rBj5zN8ajOjJgeIwHsKtwdBk5a8Knl6hnqkKjG8533wIDAQABo4IBHTCCARkwHQYDVR0OBBYEFNhChWtI/T6gOGh20oLpp3RAbt5PMIHpBgNVHSMEgeEwgd6AFNhChWtI/T6gOGh20oLpp3RAbt5PoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlvbjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpboICC0EwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCQl4qbdTbh/zfeT+CCva81yG4DqSgqzPvqKnGbw/uKPuLjcVZoD2LotW8YMLkUBWUkOMdY+5hk09drdSPNT1QZ+xOJ7eCpH3r9pp3p8HhZqTCgx9KlQNwOCXQqy9N2Y6DJWT+t/XoXwpunvfi9UGYng4x5MOHRibQykhj7pqay4g==",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLDetails:D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E",
+            "value": "issuer:1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--|serial:0B41|notBefore:20090602T161330|notAfter:20100602T161330",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Details"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Cert:A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "value": "x509:MIICQzCCAaygAwIBAgIJAOYmyCRSdRYsMA0GCSqGSIb3DQEBBQUAMFgxFDASBgNVBAsTC0lNQVAgc2VydmVyMRkwFwYDVQQDExBpbWFwLmV4YW1wbGUuY29tMSUwIwYJKoZIhvcNAQkBFhZwb3N0bWFzdGVyQGV4YW1wbGUuY29tMB4XDTA5MDYyMzIzNTM0MVoXDTEwMDYyMzIzNTM0MVowWDEUMBIGA1UECxMLSU1BUCBzZXJ2ZXIxGTAXBgNVBAMTEGltYXAuZXhhbXBsZS5jb20xJTAjBgkqhkiG9w0BCQEWFnBvc3RtYXN0ZXJAZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMXPR5wMuMkm5w5uMnIG2S8mQWy8VhOEiZXmw8VSv2z87jdOZL76Jt9aNn3FBWnFs3pCMTW5wjeIl+4lOmZ39Trpn3Vzinvs/DuDsEIvxikHaJw15bbiMsurKtCB4X2SQ6RWRN3Wa10Ldf9K2/haQ9j2rtP0D6aqc+zOu1M2duLBAgMBAAGjFTATMBEGCWCGSAGG+EIBAQQEAwIGQDANBgkqhkiG9w0BAQUFAAOBgQCVg9G8I9fxq6PCpobL0yd64PyKAoP2eBGWisWT4dqAw5eNHemqdIRbHNRc5SpSfusIhrKBi7tDP4qoBDmcH0Jx9Nudo1MupWH3obpEWzqHueH4FLuzlzJ/QXVIgFqUnwiRT7460Uk2xAZH5QY1z0H+0+yep/veWItOdir5gfWP8Q==",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLDetails:A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "value": "issuer:1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server|serial:00E626C8245275162C|notBefore:20090623T235341|notAfter:20100623T235341",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Details"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLInfo",
+            "value": "443::D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Information"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLInfo",
+            "value": "110::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Information"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLInfo",
+            "value": "993::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Information"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLInfo",
+            "value": "995::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Information"
+            },
+            "extra": {}
+        },
+        {
+            "name": "SSLInfo",
+            "value": "143::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103692",
+                "description": "SSL/TLS Certificate Information"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "22,tcp,ssh,Remote SSH server banner: SSH-2.0-OpenSSH_4.3\nRemote SSH supported authentication: password,publickey\nRemote SSH text/login banner: (not available)\n\nThis is probably:\n\n- OpenSSH\n\nConcluded from remote connection attempt with credentials:\n\nLogin:    OpenVASVT\nPassword: OpenVASVT",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.10267",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.10267)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "cpe:/a:mysql:mysql:5.0.45",
+            "value": "3306/tcp",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.100152",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.100152)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "App",
+            "value": "cpe:/a:mysql:mysql:5.0.45",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.100152",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.100152)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "3306,tcp,mysql",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.100152",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.100152)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "993,tcp,imap,An IMAP Server seems to be running on this port.",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.11414",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.11414)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "143,tcp,imap,An IMAP Server seems to be running on this port.",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.11414",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.11414)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "tcp_ports",
+            "value": "110,111,143,22,3306,443,53,679,80,993,995",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.900239",
+                "description": "Check Open TCP Ports"
+            },
+            "extra": {}
+        },
+        {
+            "name": "ports",
+            "value": "110,111,143,22,3306,443,53,679,80,993,995",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.900239",
+                "description": "Check Open TCP Ports"
+            },
+            "extra": {}
+        },
+        {
+            "name": "traceroute",
+            "value": "192.168.1.14,109.116.67.1,83.224.40.126,83.224.40.125,83.224.40.225,83.224.40.229,185.210.48.25,* * *,195.154.2.197,51.158.3.9,212.83.175.116",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.51662",
+                "description": "Traceroute"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "53,tcp,domain",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.108018",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.108018)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "scanned_with_feedtype",
+            "value": "Greenbone Community Feed",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103739",
+                "description": "Host Scan End"
+            },
+            "extra": {}
+        },
+        {
+            "name": "scanned_with_scanner",
+            "value": "9.0.3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103739",
+                "description": "Host Scan End"
+            },
+            "extra": {}
+        },
+        {
+            "name": "scanned_with_feedversion",
+            "value": "202007211413",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103739",
+                "description": "Host Scan End"
+            },
+            "extra": {}
+        },
+        {
+            "name": "hostname",
+            "value": "ctf11.root-me.org",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103997",
+                "description": "Host Details"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/993",
+            "value": "SSLv3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/993",
+            "value": "TLSv1.0",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/993",
+            "value": "SSLv2",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/143",
+            "value": "SSLv3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/143",
+            "value": "TLSv1.0",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/143",
+            "value": "SSLv2",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/110",
+            "value": "SSLv3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/110",
+            "value": "TLSv1.0",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/110",
+            "value": "SSLv2",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/port",
+            "value": "995",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/port",
+            "value": "993",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/port",
+            "value": "443",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/port",
+            "value": "143",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/port",
+            "value": "110",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/443",
+            "value": "SSLv3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/443",
+            "value": "TLSv1.0",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/995",
+            "value": "SSLv3",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/995",
+            "value": "TLSv1.0",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "TLS/995",
+            "value": "SSLv2",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.103823",
+                "description": "SSL/TLS: Version Detection Report"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "111,tcp,rpc-portmap",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.108090",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.108090)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "111,tcp,RPC/portmapper",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.11111",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.11111)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "Services",
+            "value": "679,tcp,RPC/status",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.11111",
+                "description": "Service detection (1.3.6.1.4.1.25623.1.0.11111)"
+            },
+            "extra": {}
+        },
+        {
+            "name": "OS",
+            "value": "Linux/Unix",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.111068",
+                "description": "SMTP/POP3/IMAP Server OS Identification"
+            },
+            "extra": {}
+        },
+        {
+            "name": "OS",
+            "value": "cpe:/o:linux:kernel",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.111068",
+                "description": "SMTP/POP3/IMAP Server OS Identification"
+            },
+            "extra": {}
+        },
+        {
+            "name": "OS",
+            "value": "CentOS",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.111067",
+                "description": "HTTP OS Identification"
+            },
+            "extra": {}
+        },
+        {
+            "name": "OS",
+            "value": "cpe:/o:centos:centos:5",
+            "source": {
+                "type": "nvt",
+                "name": "1.3.6.1.4.1.25623.1.0.111067",
+                "description": "HTTP OS Identification"
+            },
+            "extra": {}
+        }
+    ],
+    "errors": {
+        "count": "0"
+    }
+}

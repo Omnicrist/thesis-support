@@ -1,0 +1,82 @@
+{
+    "owner": "admin",
+    "hosts": "1",
+    "vulns": "1",
+    "os": "0",
+    "apps": "0",
+    "ssl_certs": "0",
+    "timestamp": "2020-08-30 15:40:35 Coordinated Universal Time (UTC)",
+    "task": {
+        "id": "e0cbc346-3fda-4db3-9681-9709b464eb0d",
+        "name": "host_discovery",
+        "comment": "comment",
+        "target id": "e4a233d9-6434-4364-9ebc-8a18013b29b7"
+    },
+    "ports": {
+        "212.83.175.116": [
+            {
+                "port": "general/tcp",
+                "severity": "0.0",
+                "threat": "Log"
+            }
+        ]
+    },
+    "results": {
+        "212.83.175.116": [
+            {
+                "port": "general/tcp",
+                "nvt": {
+                    "type": "nvt",
+                    "name": "Ping Host",
+                    "family": "Port scanners",
+                    "cvss_base": "0.0",
+                    "cve": "NOCVE",
+                    "bid": "NOBID",
+                    "xref": "NOXREF",
+                    "tags": "cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This check tries to determine whether a remote host is up (alive).\n\n  Several methods are used for this depending on configuration of this check. Whether a host is up can\n  be detected in 3 different ways:\n\n  - A ICMP message is sent to the host and a response is taken as alive sign.\n\n  - An ARP request is sent and a response is taken as alive sign.\n\n  - A number of typical TCP services (namely the 20 top ports of nmap)\n  are tried and their presence is taken as alive sign.\n\n  None of the methods is failsafe. It depends on network and/or host configurations\n  whether they succeed or not. Both, false positives and false negatives can occur.\n  Therefore the methods are configurable.\n\n  If you select to not mark unreachable hosts as dead, no alive detections are\n  executed and the host is assumed to be available for scanning.\n\n  In case it is configured that hosts are never marked as dead, this can cause\n  considerable timeouts and therefore a long scan duration in case the hosts\n  are in fact not available.\n\n  The available methods might fail for the following reasons:\n\n  - ICMP: This might be disabled for a environment and would then cause false\n  negatives as hosts are believed to be dead that actually are alive. In contrast\n  it is also possible that a Firewall between the scanner and the target host is answering\n  to the ICMP message and thus hosts are believed to be alive that actually are dead.\n\n  - TCP ping: Similar to the ICMP case a Firewall between the scanner and the target might\n  answer to the sent probes and thus hosts are believed to be alive that actually are dead.|qod_type=remote_banner"
+                },
+                "threat": "Log",
+                "severity": "0.0",
+                "qod": {
+                    "value": "80",
+                    "type": "remote_banner"
+                },
+                "description": "Host is up (successful ICMP ping), Method: nmap"
+            }
+        ]
+    },
+    "results_count": {
+        "full": "0",
+        "filtered": "2",
+        "debug": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "hole": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "info": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "log": {
+            "full": "2",
+            "filtered": "2"
+        },
+        "warning": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "false_positive": {
+            "full": "0",
+            "filtered": "0"
+        }
+    },
+    "max_severity_full": "0.0",
+    "max_severity_filtered": "0.0",
+    "vuln_details": [],
+    "errors": {
+        "count": "0"
+    }
+}

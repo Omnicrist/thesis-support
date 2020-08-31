@@ -1,0 +1,668 @@
+<get_reports_response status='200' status_text='OK'><report content_type='text/xml' extension='xml' format_id='a994b278-1f62-11e1-96ac-406186ea4fc5' id='d33a7fd7-8750-4a65-a549-393b59e331b9' type='scan'><owner><name>admin</name></owner><name/><comment/><creation_time/><modification_time>2020-08-30T16:00:03Z</modification_time><writable>0</writable><in_use>0</in_use><task id='5cd745ee-3729-4702-b705-2248d4569968'><name>discovery</name></task><report_format id='a994b278-1f62-11e1-96ac-406186ea4fc5'><name>XML</name></report_format><report id='d33a7fd7-8750-4a65-a549-393b59e331b9'><omp><version>7.0</version></omp><sort><field>type<order>ascending</order></field></sort><filters id=''><term>apply_overrides=0 min_qod=70 first=1 rows=1000 sort=name</term><filter>High</filter><filter>Medium</filter><filter>Low</filter><filter>Log</filter><filter>Debug</filter><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>first</column><relation>=</relation><value>1</value></keyword><keyword><column>rows</column><relation>=</relation><value>1000</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><severity_class id='d4c74cda-89e1-11e3-9c29-406186ea4fc5'><name>nist</name><full_name>NVD Vulnerability Severity Ratings</full_name><severity_range><name>None</name><min>0.0</min><max>0.0</max></severity_range><severity_range><name>Low</name><min>0.1</min><max>3.9</max></severity_range><severity_range><name>Medium</name><min>4.0</min><max>6.9</max></severity_range><severity_range><name>High</name><min>7.0</min><max>10.0</max></severity_range></severity_class><user_tags><count>0</count></user_tags><scan_run_status>Done</scan_run_status><hosts><count>1</count></hosts><closed_cves><count>0</count></closed_cves><vulns><count>28</count></vulns><os><count>1</count></os><apps><count>7</count></apps><ssl_certs><count>5</count></ssl_certs><task id='5cd745ee-3729-4702-b705-2248d4569968'><name>discovery</name><comment>comment</comment><target id='e4a233d9-6434-4364-9ebc-8a18013b29b7'><trash>0</trash></target><progress>-1</progress><user_tags><count>0</count></user_tags></task><scan><task><slave id=''><name/><host/><port>0</port></slave><preferences><preference><name>Network Source Interface</name><scanner_name>source_iface</scanner_name><value/></preference></preferences></task></scan><timestamp>2020-08-30T15:40:21Z</timestamp><scan_start/><timezone>Coordinated Universal Time</timezone><timezone_abbrev>UTC</timezone_abbrev><ports max='1000' start='1'><count>10</count><port><host>212.83.175.116</host>3306/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>53/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>143/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>443/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>general/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>111/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>995/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>80/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>993/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>22/tcp<severity>0.0</severity><threat>Log</threat></port><port><host>212.83.175.116</host>110/tcp<severity>0.0</severity><threat>Log</threat></port></ports><results max='1000' start='1'><result id='31168dde-71c9-46de-a5d9-e9eb8711f309'><name>Apache HTTP/Web Server Detection (HTTP)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:47Z</creation_time><modification_time>2020-08-30T15:44:47Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.900498'><type>nvt</type><name>Apache HTTP/Web Server Detection (HTTP)</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks whether Apache HTTP/Web Server is present
+  on the target system.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-07T07:15:05+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected Apache HTTP/Web Server
+
+Version:       2.2.3
+Location:      443/tcp
+CPE:           cpe:/a:apache:http_server:2.2.3
+
+Concluded from version/product identification result:
+Server: Apache/2.2.3</description></result><result id='0c087f0b-03f9-4546-93f0-7a1af8dd154d'><name>Apache HTTP/Web Server Detection (HTTP)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:48Z</creation_time><modification_time>2020-08-30T15:44:48Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.900498'><type>nvt</type><name>Apache HTTP/Web Server Detection (HTTP)</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks whether Apache HTTP/Web Server is present
+  on the target system.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-07T07:15:05+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected Apache HTTP/Web Server
+
+Version:       2.2.3
+Location:      80/tcp
+CPE:           cpe:/a:apache:http_server:2.2.3
+
+Concluded from version/product identification result:
+Server: Apache/2.2.3</description></result><result id='6cefbcf0-b149-4d89-a0db-de593de91b82'><name>Database Open Access Vulnerability</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:43:20Z</creation_time><modification_time>2020-08-30T15:43:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>3306/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902799'><type>nvt</type><name>Database Open Access Vulnerability</name><family>Databases</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://www.pcisecuritystandards.org/security_standards/index.php?id=pci_dss_v1-2.pdf</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|impact=Successful exploitation could allow an attacker to obtain the sensitive
+  information of the database.|insight=Do not restricting direct access of databases to the remote systems.|summary=The host is running a Database server and is prone to information
+  disclosure vulnerability.|affected=- MySQL/MariaDB
+
+  - IBM DB2
+
+  - PostgreSQL
+
+  - IBM solidDB
+
+  - Oracle Database
+
+  - Microsoft SQL Server|solution=Restrict Database access to remote systems.|solution_type=Workaround|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-21T13:23:23+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>MySQL can be accessed by remote attackers</description></result><result id='af89b0f5-7812-4648-bb62-ae7bbb416634'><name>DNS Server Detection (TCP)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:38Z</creation_time><modification_time>2020-08-30T15:42:38Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>53/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.108018'><type>nvt</type><name>DNS Server Detection (TCP)</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=A DNS Server is running at this Host.
+  A Name Server translates domain names into IP addresses. This makes it
+  possible for a user to access a website by typing in the domain name instead of
+  the website&apos;s actual IP address.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>$Revision: 13541 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description/></result><result id='d8158753-2a3a-4289-8063-7823e6115574'><name>Dovecot Detection (Consolidation)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:43:24Z</creation_time><modification_time>2020-08-30T15:43:24Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>general/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.113212'><type>nvt</type><name>Dovecot Detection (Consolidation)</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://www.dovecot.org/</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|qod_type=remote_banner|summary=Reports Dovecot installation including version and location.</tags><cert/></nvt><scan_nvt_version>$Revision: 13403 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected Dovecot
+
+Version:       unknown
+Location:      143/tcp
+CPE:           cpe:/a:dovecot:dovecot
+
+Concluded from version/product identification result:
+* OK Dovecot ready.
+
+Detection Method: IMAP Banner
+
+Detected Dovecot
+
+Version:       unknown
+Location:      993/tcp
+CPE:           cpe:/a:dovecot:dovecot
+
+Concluded from version/product identification result:
+* OK Dovecot ready.
+
+Detection Method: IMAP Banner
+
+Detected Dovecot
+
+Version:       unknown
+Location:      110/tcp
+CPE:           cpe:/a:dovecot:dovecot
+
+Concluded from version/product identification result:
++OK Dovecot ready.
+
+Detection Method: POP3 Banner
+
+Detected Dovecot
+
+Version:       unknown
+Location:      995/tcp
+CPE:           cpe:/a:dovecot:dovecot
+
+Concluded from version/product identification result:
++OK Dovecot ready.
+
+Detection Method: POP3 Banner</description></result><result id='9d173070-9ce8-4f16-89e1-45a958739cc6'><name>HTTP Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:22Z</creation_time><modification_time>2020-08-30T15:44:22Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10107'><type>nvt</type><name>HTTP Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script detects and reports the HTTP Server&apos;s banner
+  which might provide the type and version of it.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T08:53:28+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>The remote HTTP Server banner is:
+
+Server: Apache/2.2.3 (CentOS)</description></result><result id='b0ef4d66-6f60-4f98-8f64-2ceb1b2f551f'><name>HTTP Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:22Z</creation_time><modification_time>2020-08-30T15:44:22Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10107'><type>nvt</type><name>HTTP Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script detects and reports the HTTP Server&apos;s banner
+  which might provide the type and version of it.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T08:53:28+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>The remote HTTP Server banner is:
+
+Server: Apache/2.2.3 (CentOS)</description></result><result id='267b7cd2-32f6-413a-a27e-964a5c80312c'><name>IMAP Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:05Z</creation_time><modification_time>2020-08-30T15:42:05Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.11414'><type>nvt</type><name>IMAP Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the IMAP Server&apos;s type and version by connecting to
+  the server and processing the received banner.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-27T07:53:12+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Remote IMAP server banner:
+
+* OK Dovecot ready.
+
+This is probably:
+
+- Dovecot
+
+The remote IMAP server is announcing the following available CAPABILITIES via an unencrypted connection:
+
+AUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, STARTTLS, THREAD=REFERENCES, UNSELECT</description></result><result id='c6b577c6-4333-4417-9a8c-07bd9111b853'><name>IMAP Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:30Z</creation_time><modification_time>2020-08-30T15:42:30Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.11414'><type>nvt</type><name>IMAP Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the IMAP Server&apos;s type and version by connecting to
+  the server and processing the received banner.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-27T07:53:12+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Remote IMAP server banner:
+
+* OK Dovecot ready.
+
+This is probably:
+
+- Dovecot
+
+The remote IMAP server is announcing the following available CAPABILITIES via an encrypted connection:
+
+AUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, THREAD=REFERENCES, UNSELECT</description></result><result id='fb291a05-8e91-43c4-b8d3-53afbb913091'><name>MySQL/MariaDB Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:48Z</creation_time><modification_time>2020-08-30T15:41:48Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>3306/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.100152'><type>nvt</type><name>MySQL/MariaDB Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detects the installed version of
+  MySQL/MariaDB.
+
+  Detect a running MySQL/MariaDB by getting the banner, extract the version
+  from the banner.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-11-05T16:13:01+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected MySQL
+
+Version:       5.0.45
+Location:      3306/tcp
+CPE:           cpe:/a:mysql:mysql:5.0.45
+
+Concluded from version/product identification result:
+5.0.45</description></result><result id='4fe37e8a-920c-494c-9f8a-fa45b32d8e4a'><name>Obtain list of all port mapper registered programs via RPC</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>111/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.11111'><type>nvt</type><name>Obtain list of all port mapper registered programs via RPC</name><family>RPC</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script calls the DUMP RPC on the port mapper, to obtain the
+  list of all registered programs.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>$Revision: 13541 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>These are the registered RPC programs:
+
+RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) on port 111/TCP
+
+RPC program #100024 version 1 &apos;status&apos; on port 679/TCP
+
+RPC program #100000 version 2 &apos;portmapper&apos; (portmap sunrpc rpcbind) on port 111/UDP
+
+RPC program #100024 version 1 &apos;status&apos; on port 676/UDP</description></result><result id='904764dd-4c80-4217-9d71-ab771de0e43f'><name>OpenSSH Detection Consolidation</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:43:25Z</creation_time><modification_time>2020-08-30T15:43:25Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>general/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.108577'><type>nvt</type><name>OpenSSH Detection Consolidation</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://www.openssh.com/</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The script reports a detected OpenSSH including the
+  version number.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-05-23T06:42:35+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected OpenSSH Server
+
+Version:       4.3
+Location:      22/tcp
+CPE:           cpe:/a:openbsd:openssh:4.3
+
+Concluded from version/product identification result:
+SSH-2.0-OpenSSH_4.3</description></result><result id='d5ffde99-e9e7-4d62-9433-141fe7807610'><name>OS Detection Consolidation and Reporting</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:55:39Z</creation_time><modification_time>2020-08-30T15:55:39Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>general/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.105937'><type>nvt</type><name>OS Detection Consolidation and Reporting</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://community.greenbone.net/c/vulnerability-tests</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script consolidates the OS information detected by several NVTs and tries to find the best matching OS.
+
+  Furthermore it reports all previously collected information leading to this best matching OS. It also reports possible additional information
+  which might help to improve the OS detection.
+
+  If any of this information is wrong or could be improved please consider to report these to the referenced community portal.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-07-17T12:06:38+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Best matching OS:
+
+OS:           CentOS
+Version:      5
+CPE:          cpe:/o:centos:centos:5
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111067 (HTTP OS Identification)
+Concluded from HTTP Server banner on port 443/tcp: Server: Apache/2.2.3 (CentOS)
+Setting key &quot;Host/runs_unixoide&quot; based on this information
+
+Other OS detections (in order of reliability):
+
+OS:           CentOS
+Version:      5
+CPE:          cpe:/o:centos:centos:5
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111067 (HTTP OS Identification)
+Concluded from HTTP Server banner on port 80/tcp: Server: Apache/2.2.3 (CentOS)
+
+OS:           Linux/Unix
+CPE:          cpe:/o:linux:kernel
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111068 (SMTP/POP3/IMAP Server OS Identification)
+Concluded from POP3 banner on port 995/tcp: +OK Dovecot ready.
+
+OS:           Linux/Unix
+CPE:          cpe:/o:linux:kernel
+Found by NVT: 1.3.6.1.4.1.25623.1.0.111068 (SMTP/POP3/IMAP Server OS Identification)
+Concluded from POP3 banner on port 110/tcp: +OK Dovecot ready.</description></result><result id='02aaff00-c3c8-4ef0-a505-5e5c3e08fc2e'><name>PHP Version Detection (Remote)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:55:23Z</creation_time><modification_time>2020-08-30T15:55:23Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.800109'><type>nvt</type><name>PHP Version Detection (Remote)</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detects the installed version of PHP.
+  This script sends an HTTP GET request and tries to get the version from the
+  response.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T13:14:18+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected PHP
+
+Version:       5.2.6
+Location:      443/tcp
+CPE:           cpe:/a:php:php:5.2.6
+
+Concluded from version/product identification result:
+X-Powered-By: PHP/5.2.6 </description></result><result id='abca48de-3e1d-440d-8d84-b56b51d83792'><name>PHP Version Detection (Remote)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:55:23Z</creation_time><modification_time>2020-08-30T15:55:23Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.800109'><type>nvt</type><name>PHP Version Detection (Remote)</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detects the installed version of PHP.
+  This script sends an HTTP GET request and tries to get the version from the
+  response.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T13:14:18+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected PHP
+
+Version:       5.2.6
+Location:      80/tcp
+CPE:           cpe:/a:php:php:5.2.6
+
+Concluded from version/product identification result:
+X-Powered-By: PHP/5.2.6 </description></result><result id='885a38c5-2eb6-4b26-a1df-edbaeb08b7ad'><name>phpMyAdmin Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:55:41Z</creation_time><modification_time>2020-08-30T15:55:41Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.900129'><type>nvt</type><name>phpMyAdmin Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detection of phpMyAdmin.
+
+  The script sends a connection request to the server and attempts to
+  extract the version number from the reply.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T06:57:16+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected phpMyAdmin
+
+Version:       3.0.0
+Location:      /phpmyadmin
+CPE:           cpe:/a:phpmyadmin:phpmyadmin:3.0.0
+
+Concluded from version/product identification result:
+Version 3.0.0
+
+Concluded from version/product identification location:
+https://ctf11.root-me.org/phpmyadmin/README
+
+Extra information:
+- Protected by Username/Password</description></result><result id='17c41671-5338-4758-954f-cbd85ca11fad'><name>phpMyAdmin Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:55:45Z</creation_time><modification_time>2020-08-30T15:55:45Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.900129'><type>nvt</type><name>phpMyAdmin Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Detection of phpMyAdmin.
+
+  The script sends a connection request to the server and attempts to
+  extract the version number from the reply.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T06:57:16+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected phpMyAdmin
+
+Version:       3.0.0
+Location:      /phpmyadmin
+CPE:           cpe:/a:phpmyadmin:phpmyadmin:3.0.0
+
+Concluded from version/product identification result:
+Version 3.0.0
+
+Concluded from version/product identification location:
+http://ctf11.root-me.org/phpmyadmin/README
+
+Extra information:
+- Protected by Username/Password</description></result><result id='7eaff282-9418-4ace-ac22-4dcaaccf72db'><name>POP3 Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:04Z</creation_time><modification_time>2020-08-30T15:42:04Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10185'><type>nvt</type><name>POP3 Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the POP3 Server&apos;s type and version by connecting to
+  the server and processing the received banner.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-04-03T10:30:57+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Remote POP3 server banner:
+
++OK Dovecot ready.
+
+This is probably:
+
+- Dovecot
+
+The remote POP3 server is announcing the following available CAPABILITIES via an encrypted connection:
+
+CAPA, PIPELINING, RESP-CODES, SASL PLAIN, TOP, UIDL, USER</description></result><result id='4e5506a3-83d4-495f-aaac-0459e1902936'><name>POP3 Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:14Z</creation_time><modification_time>2020-08-30T15:42:14Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10185'><type>nvt</type><name>POP3 Server type and version</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the POP3 Server&apos;s type and version by connecting to
+  the server and processing the received banner.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-04-03T10:30:57+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Remote POP3 server banner:
+
++OK Dovecot ready.
+
+This is probably:
+
+- Dovecot
+
+The remote POP3 server is announcing the following available CAPABILITIES via an unencrypted connection:
+
+CAPA, PIPELINING, RESP-CODES, SASL PLAIN, STLS, TOP, UIDL, USER</description></result><result id='489f6d32-2ea6-4488-91f9-58dcb18441d4'><name>Roundcube Webmail Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:56:29Z</creation_time><modification_time>2020-08-30T15:56:29Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.111027'><type>nvt</type><name>Roundcube Webmail Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The script sends a HTTP request to the server
+  and attempts to extract the version from the reply.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T06:57:16+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected Roundcube Webmail
+
+Version:       0.2-ALPHA
+Location:      /mail
+CPE:           cpe:/a:roundcube:webmail:0.2:ALPHA
+
+Concluded from version/product identification result:
+RELEASE 0.2-ALPHA
+
+Concluded from version/product identification location:
+https://ctf11.root-me.org/mail/CHANGELOG</description></result><result id='b5a3f84e-93fe-423a-ace1-848e89052efa'><name>Roundcube Webmail Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:56:29Z</creation_time><modification_time>2020-08-30T15:56:29Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.111027'><type>nvt</type><name>Roundcube Webmail Detection</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The script sends a HTTP request to the server
+  and attempts to extract the version from the reply.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-05-06T06:57:16+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Detected Roundcube Webmail
+
+Version:       0.2-ALPHA
+Location:      /mail
+CPE:           cpe:/a:roundcube:webmail:0.2:ALPHA
+
+Concluded from version/product identification result:
+RELEASE 0.2-ALPHA
+
+Concluded from version/product identification location:
+http://ctf11.root-me.org/mail/CHANGELOG</description></result><result id='723197d0-d6b9-4575-8b08-8b6405f5a186'><name>RPC portmapper (TCP)</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:08Z</creation_time><modification_time>2020-08-30T15:41:08Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>111/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.108090'><type>nvt</type><name>RPC portmapper (TCP)</name><family>RPC</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script performs detection of RPC portmapper on TCP.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-04-03T08:37:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>RPC portmapper is running on this port.</description></result><result id='82037944-f472-42fe-91e8-aa1b7641ab70'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>80/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A web server is running on this port</description></result><result id='256c57c3-6bda-4c28-a868-3afcb2a6ff26'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>22/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>An ssh server is running on this port</description></result><result id='96f5bcc9-10de-4c6b-b3c1-4a716d12dc1c'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A TLScustom server answered on this port</description></result><result id='1340764c-eb6d-4bea-97e1-e06e66d54e94'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>3306/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>An unknown service is running on this port.
+It is usually reserved for MySQL</description></result><result id='c381880c-b145-426d-bb56-0da6edbb7d03'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:09Z</creation_time><modification_time>2020-08-30T15:41:09Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A TLScustom server answered on this port</description></result><result id='a47ffc05-797f-46b6-b00e-18bacde36bc5'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:10Z</creation_time><modification_time>2020-08-30T15:41:10Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A TLScustom server answered on this port</description></result><result id='a65f6d20-5b67-4dd8-b578-21cc10f676d5'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:10Z</creation_time><modification_time>2020-08-30T15:41:10Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A web server is running on this port through SSL</description></result><result id='e217c61d-4fb4-4551-b358-af0096742fed'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:10Z</creation_time><modification_time>2020-08-30T15:41:10Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>An unknown service is running on this port.
+It is usually reserved for IMAP</description></result><result id='daa4282f-abe7-40cb-b6b9-a3a68da35d79'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:10Z</creation_time><modification_time>2020-08-30T15:41:10Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A pop3 server is running on this port</description></result><result id='1e625833-7759-4b66-b5b4-efcc377d8409'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:16Z</creation_time><modification_time>2020-08-30T15:41:16Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>An unknown service is running on this port through SSL.
+It is usually reserved for IMAPS</description></result><result id='dd9f7fd3-2ec6-4018-9c05-71423759430d'><name>Services</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:41:17Z</creation_time><modification_time>2020-08-30T15:41:17Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10330'><type>nvt</type><name>Services</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine attempts to guess which service is running on the
+  remote ports. For instance, it searches for a web server which could listen on another port than
+  80 or 443 and makes this information available for other check routines.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2019-07-08T14:12:44+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>A pop3 server is running on this port</description></result><result id='7de050c8-bf0a-439c-afd2-82baedf77d53'><name>SSH Protocol Algorithms Supported</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:22Z</creation_time><modification_time>2020-08-30T15:42:22Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>22/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.105565'><type>nvt</type><name>SSH Protocol Algorithms Supported</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script detects which algorithms are supported by the remote SSH Service.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-26T13:48:10+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>The following options are supported by the remote ssh service:
+
+kex_algorithms:
+diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+
+server_host_key_algorithms:
+ssh-rsa,ssh-dss
+
+encryption_algorithms_client_to_server:
+aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+
+encryption_algorithms_server_to_client:
+aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour128,arcfour256,arcfour,aes192-cbc,aes256-cbc,rijndael-cbc@lysator.liu.se,aes128-ctr,aes192-ctr,aes256-ctr
+
+mac_algorithms_client_to_server:
+hmac-md5,hmac-sha1,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+
+mac_algorithms_server_to_client:
+hmac-md5,hmac-sha1,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+
+compression_algorithms_client_to_server:
+none,zlib@openssh.com
+
+compression_algorithms_server_to_client:
+none,zlib@openssh.com</description></result><result id='68c66c24-31e8-431a-9ca9-4c6aee38c28a'><name>SSH Protocol Versions Supported</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:43:25Z</creation_time><modification_time>2020-08-30T15:43:25Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>22/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.100259'><type>nvt</type><name>SSH Protocol Versions Supported</name><family>Service detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Identification of SSH protocol versions supported by the remote
+  SSH Server. Also reads the corresponding fingerprints from the service.
+
+  The following versions are tried: 1.33, 1.5, 1.99 and 2.0|qod_type=remote_active</tags><cert/></nvt><scan_nvt_version>2020-03-26T13:48:10+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>95</value><type>remote_active</type></qod><description>The remote SSH Server supports the following SSH Protocol Versions:
+1.99
+2.0
+
+SSHv2 Fingerprint(s):
+ssh-dss: 14:a9:f4:11:dc:2c:4e:0d:45:6c:99:11:22:29:03:bc
+ssh-rsa: 45:58:6c:98:3e:97:2a:da:e2:b8:6a:84:d4:6a:be:26</description></result><result id='061a78f1-aa61-4f4b-b24b-44f7c5d18c1b'><name>SSH Server type and version</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:21Z</creation_time><modification_time>2020-08-30T15:42:21Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>22/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.10267'><type>nvt</type><name>SSH Server type and version</name><family>Product detection</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This detects the SSH Server&apos;s type and version by connecting to the server
+  and processing the buffer received.
+
+  This information gives potential attackers additional information about the system they are attacking.
+  Versions and Types should be omitted where possible.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-04-22T09:21:14+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Remote SSH server banner: SSH-2.0-OpenSSH_4.3
+Remote SSH supported authentication: password,publickey
+Remote SSH text/login banner: (not available)
+
+This is probably:
+
+- OpenSSH
+
+Concluded from remote connection attempt with credentials:
+
+Login:    OpenVASVT
+Password: OpenVASVT</description></result><result id='2adc3c7f-2856-48ff-8c83-9989ee4e9197'><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103140'><type>nvt</type><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:http://en.wikipedia.org/wiki/Self-signed_certificate</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate on this port is self-signed.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service is self signed.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--
+serial ....: 0B41
+valid from : 2009-06-02 16:13:30 UTC
+valid until: 2010-06-02 16:13:30 UTC
+fingerprint (SHA-1): 735D3717215C53A18EAF2F9A719D3326AE0D5FCE
+fingerprint (SHA-256): D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E</description></result><result id='61bf00f0-cd65-4529-bdf7-cca38871fa8b'><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:20Z</creation_time><modification_time>2020-08-30T15:44:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103140'><type>nvt</type><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:http://en.wikipedia.org/wiki/Self-signed_certificate</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate on this port is self-signed.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service is self signed.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='e17abfec-682f-451f-afdf-7be23d76728f'><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:20Z</creation_time><modification_time>2020-08-30T15:44:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103140'><type>nvt</type><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:http://en.wikipedia.org/wiki/Self-signed_certificate</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate on this port is self-signed.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service is self signed.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='8678eee8-23d2-4599-83b8-dc59c2ee073f'><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:20Z</creation_time><modification_time>2020-08-30T15:44:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103140'><type>nvt</type><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:http://en.wikipedia.org/wiki/Self-signed_certificate</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate on this port is self-signed.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service is self signed.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='25b41951-5f42-4221-bb0e-88426f16d657'><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:20Z</creation_time><modification_time>2020-08-30T15:44:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103140'><type>nvt</type><name>SSL/TLS: Certificate - Self-Signed Certificate Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:http://en.wikipedia.org/wiki/Self-signed_certificate</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate on this port is self-signed.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service is self signed.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='a178e085-907e-440a-bf0d-771416fa4b46'><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103141'><type>nvt</type><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate contains a common name (CN) that does not match the hostname.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service contains a common name (CN) that does not match the hostname &quot;ctf11.root-me.org&quot;.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--
+serial ....: 0B41
+valid from : 2009-06-02 16:13:30 UTC
+valid until: 2010-06-02 16:13:30 UTC
+fingerprint (SHA-1): 735D3717215C53A18EAF2F9A719D3326AE0D5FCE
+fingerprint (SHA-256): D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E</description></result><result id='8aa2472f-37d0-4cc4-af8d-7722bad95280'><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103141'><type>nvt</type><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate contains a common name (CN) that does not match the hostname.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service contains a common name (CN) that does not match the hostname &quot;ctf11.root-me.org&quot;.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='36677470-7547-43bf-8d02-f9c460c1a6ae'><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103141'><type>nvt</type><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate contains a common name (CN) that does not match the hostname.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service contains a common name (CN) that does not match the hostname &quot;ctf11.root-me.org&quot;.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='4752f0e3-64e3-4114-9032-abfd23923028'><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103141'><type>nvt</type><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate contains a common name (CN) that does not match the hostname.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service contains a common name (CN) that does not match the hostname &quot;ctf11.root-me.org&quot;.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='3e0b6fde-a0ac-4a5a-8fbe-f03f264b66cd'><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103141'><type>nvt</type><name>SSL/TLS: Certificate - Subject Common Name Does Not Match Server FQDN</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=The SSL/TLS certificate contains a common name (CN) that does not match the hostname.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 8981 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The certificate of the remote service contains a common name (CN) that does not match the hostname &quot;ctf11.root-me.org&quot;.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='1e1b1f88-4590-4405-ae00-9b90d012ee81'><name>SSL/TLS: Collect and Report Certificate Details</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:18Z</creation_time><modification_time>2020-08-30T15:44:18Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103692'><type>nvt</type><name>SSL/TLS: Collect and Report Certificate Details</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.
+
+  This data will be used by other tests to verify server certificates.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2019-04-04T13:38:03+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='37cf85e8-deee-4a0d-ace3-9bb966a4158a'><name>SSL/TLS: Collect and Report Certificate Details</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:18Z</creation_time><modification_time>2020-08-30T15:44:18Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103692'><type>nvt</type><name>SSL/TLS: Collect and Report Certificate Details</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.
+
+  This data will be used by other tests to verify server certificates.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2019-04-04T13:38:03+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='7b90f21c-77b3-4217-a01f-64f2f637982d'><name>SSL/TLS: Collect and Report Certificate Details</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103692'><type>nvt</type><name>SSL/TLS: Collect and Report Certificate Details</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.
+
+  This data will be used by other tests to verify server certificates.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2019-04-04T13:38:03+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='6f89db89-0a36-4728-90ef-78168c9d06a8'><name>SSL/TLS: Collect and Report Certificate Details</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103692'><type>nvt</type><name>SSL/TLS: Collect and Report Certificate Details</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.
+
+  This data will be used by other tests to verify server certificates.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2019-04-04T13:38:03+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='a51967ff-9c83-4268-9ad6-fe5c9462d241'><name>SSL/TLS: Collect and Report Certificate Details</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:19Z</creation_time><modification_time>2020-08-30T15:44:19Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103692'><type>nvt</type><name>SSL/TLS: Collect and Report Certificate Details</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This script collects and reports the details of all SSL/TLS certificates.
+
+  This data will be used by other tests to verify server certificates.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2019-04-04T13:38:03+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following certificate details of the remote service were collected.
+
+Certificate details:
+subject ...: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+subject alternative names (SAN):
+None
+issued by .: 1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server
+serial ....: 00E626C8245275162C
+valid from : 2009-06-23 23:53:41 UTC
+valid until: 2010-06-23 23:53:41 UTC
+fingerprint (SHA-1): 0C30773C8CD5CB9EF39B346E26249A79A1B51CB7
+fingerprint (SHA-256): A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</description></result><result id='52d9b8f6-a299-498f-854a-272cf81364a9'><name>SSL/TLS: Hostname discovery from server certificate</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:20Z</creation_time><modification_time>2020-08-30T15:44:20Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>general/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.111010'><type>nvt</type><name>SSL/TLS: Hostname discovery from server certificate</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=It was possible to discover an additional hostname
+  of this server from its certificate Common or Subject Alt Name.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>$Revision: 13774 $</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>The following additional but not resolvable hostnames were detected:
+
+imap.example.com
+localhost.localdomain</description></result><result id='8b81b72b-1fa8-4538-97d0-0ab874eefb28'><name>SSL/TLS: IMAP &apos;STARTTLS&apos; Command Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:45Z</creation_time><modification_time>2020-08-30T15:42:45Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.105007'><type>nvt</type><name>SSL/TLS: IMAP &apos;STARTTLS&apos; Command Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://tools.ietf.org/html/rfc2595</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks if the remote IMAP server supports SSL/TLS with the &apos;STARTTLS&apos; command.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-24T13:14:07+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>The remote IMAP server supports SSL/TLS with the &apos;STARTTLS&apos; command.
+
+The remote IMAP server is announcing the following CAPABILITIES before sending the &apos;STARTTLS&apos; command:
+
+AUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, STARTTLS, THREAD=REFERENCES, UNSELECT
+
+The remote IMAP server is announcing the following CAPABILITIES after sending the &apos;STARTTLS&apos; command:
+
+AUTH=PLAIN, CHILDREN, IDLE, LITERAL+, LOGIN-REFERRALS, MULTIAPPEND, NAMESPACE, SASL-IR, SORT, THREAD=REFERENCES, UNSELECT</description></result><result id='237284d9-8066-4461-a4dd-33e284acdb67'><name>SSL/TLS: POP3 &apos;STLS&apos; Command Detection</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:42:35Z</creation_time><modification_time>2020-08-30T15:42:35Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.105008'><type>nvt</type><name>SSL/TLS: POP3 &apos;STLS&apos; Command Detection</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>URL:https://tools.ietf.org/html/rfc2595</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=Checks if the remote POP3 server supports SSL/TLS with the &apos;STLS&apos; command.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-24T13:14:07+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>The remote POP3 server supports SSL/TLS with the &apos;STLS&apos; command.
+
+The remote POP3 server is announcing the following CAPABILITIES before sending the &apos;STLS&apos; command:
+
+CAPA, PIPELINING, RESP-CODES, SASL PLAIN, STLS, TOP, UIDL, USER
+
+The remote POP3 server is announcing the following CAPABILITIES after sending the &apos;STLS&apos; command:
+
+CAPA, PIPELINING, RESP-CODES, SASL PLAIN, TOP, UIDL, USER</description></result><result id='93441d6b-debe-4df4-894c-f655a47929d1'><name>SSL/TLS: Report Medium Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:12Z</creation_time><modification_time>2020-08-30T15:44:12Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902816'><type>nvt</type><name>SSL/TLS: Report Medium Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Medium SSL/TLS cipher suites accepted by a service.|insight=Any cipher suite considered to be secure for only the next 10 years is considered as medium|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='6676c97a-8e67-4cdf-b49e-3da3777f994a'><name>SSL/TLS: Report Medium Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902816'><type>nvt</type><name>SSL/TLS: Report Medium Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Medium SSL/TLS cipher suites accepted by a service.|insight=Any cipher suite considered to be secure for only the next 10 years is considered as medium|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='3929c09e-cb44-4a7a-b23b-6d010dcb50e9'><name>SSL/TLS: Report Medium Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902816'><type>nvt</type><name>SSL/TLS: Report Medium Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Medium SSL/TLS cipher suites accepted by a service.|insight=Any cipher suite considered to be secure for only the next 10 years is considered as medium|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA</description></result><result id='e3ce8d51-72c1-42cb-b757-61cfed604527'><name>SSL/TLS: Report Medium Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:14Z</creation_time><modification_time>2020-08-30T15:44:14Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902816'><type>nvt</type><name>SSL/TLS: Report Medium Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Medium SSL/TLS cipher suites accepted by a service.|insight=Any cipher suite considered to be secure for only the next 10 years is considered as medium|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='e05735ca-81e2-457f-ad0e-44bd7747a226'><name>SSL/TLS: Report Medium Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:14Z</creation_time><modification_time>2020-08-30T15:44:14Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.902816'><type>nvt</type><name>SSL/TLS: Report Medium Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Medium SSL/TLS cipher suites accepted by a service.|insight=Any cipher suite considered to be secure for only the next 10 years is considered as medium|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Medium&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Medium&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='489044ae-47f8-4e6c-96ec-bf52d296d651'><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:12Z</creation_time><modification_time>2020-08-30T15:44:12Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>995/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103441'><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='cee87c2e-6e27-4811-b2c0-3585b4728bb3'><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>993/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103441'><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='4fa28055-3833-4811-bcd8-9dfeb92093ce'><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>443/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103441'><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA</description></result><result id='483e2fd2-b020-4dd2-9141-f4374b3fc1c3'><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>143/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103441'><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='2eb740bf-f74b-4b2d-9a74-170ada6d8e08'><name>SSL/TLS: Report Non Weak Cipher Suites</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:44:13Z</creation_time><modification_time>2020-08-30T15:44:13Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>110/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.103441'><type>nvt</type><name>SSL/TLS: Report Non Weak Cipher Suites</name><family>SSL and TLS</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|summary=This routine reports all Non Weak SSL/TLS cipher suites accepted by a service.|qod_type=remote_app</tags><cert/></nvt><scan_nvt_version>2020-03-31T06:57:15+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>98</value><type>remote_app</type></qod><description>&apos;Non Weak&apos; cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+&apos;Non Weak&apos; cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DH_anon_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA</description></result><result id='55bad1fd-3e2c-42ef-9144-5bc75cb58e97'><name>Traceroute</name><owner><name>admin</name></owner><comment/><creation_time>2020-08-30T15:43:32Z</creation_time><modification_time>2020-08-30T15:43:32Z</modification_time><user_tags><count>0</count></user_tags><host>212.83.175.116<asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/></host><port>general/tcp</port><nvt oid='1.3.6.1.4.1.25623.1.0.51662'><type>nvt</type><name>Traceroute</name><family>General</family><cvss_base>0.0</cvss_base><cve>NOCVE</cve><bid>NOBID</bid><xref>NOXREF</xref><tags>cvss_base_vector=AV:N/AC:L/Au:N/C:N/I:N/A:N|solution=Block unwanted packets from escaping your network.|summary=A traceroute from the scanning server to the target system was
+  conducted. This traceroute is provided primarily for informational value only. In the vast
+  majority of cases, it does not represent a vulnerability. However, if the displayed traceroute
+  contains any private addresses that should not have been publicly visible, then you have an
+  issue you need to correct.|qod_type=remote_banner</tags><cert/></nvt><scan_nvt_version>2020-03-21T13:23:23+0000</scan_nvt_version><threat>Log</threat><severity>0.0</severity><qod><value>80</value><type>remote_banner</type></qod><description>Here is the route from 192.168.1.14 to 212.83.175.116:
+
+192.168.1.14
+109.116.67.1
+83.224.40.126
+83.224.40.125
+83.224.40.225
+83.224.40.229
+185.210.48.25
+4.69.161.126
+* * *
+195.154.2.197
+51.158.3.9
+212.83.175.116</description></result></results><result_count>0<full>0</full><filtered>130</filtered><debug><full>0</full><filtered>0</filtered></debug><hole><full>0</full><filtered>0</filtered></hole><info><full>0</full><filtered>0</filtered></info><log><full>130</full><filtered>130</filtered></log><warning><full>0</full><filtered>0</filtered></warning><false_positive><full>0</full><filtered>0</filtered></false_positive></result_count><severity><full>0.0</full><filtered>0.0</filtered></severity><host><ip>212.83.175.116</ip><asset asset_id='b3078ba8-9333-487e-b980-7e3beba4fce6'/><start/><end/><port_count><page>10</page></port_count><result_count><page>65</page><hole><page>0</page></hole><warning><page>0</page></warning><info><page>0</page></info><log><page>65</page></log><false_positive><page>0</page></false_positive></result_count><detail><name>Cert:D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E</name><value>x509:MIIEDjCCA3egAwIBAgICC0EwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTA5MDYwMjE2MTMzMFoXDTEwMDYwMjE2MTMzMFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDURVDZXpl19apuqss3n2fvwiw0/vTQoYizWQ3lOhKp8ljYAIV3EUpXlCdrYSrCTlg3H4Tg6G7Sdm2nkTu+zzydM8ceBl8FVUuHYcAjI+nGmc2vk5PGrWddnWcVqmb/Hg0rBj5zN8ajOjJgeIwHsKtwdBk5a8Knl6hnqkKjG8533wIDAQABo4IBHTCCARkwHQYDVR0OBBYEFNhChWtI/T6gOGh20oLpp3RAbt5PMIHpBgNVHSMEgeEwgd6AFNhChWtI/T6gOGh20oLpp3RAbt5PoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlvbjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9jYWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9zdC5sb2NhbGRvbWFpboICC0EwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCQl4qbdTbh/zfeT+CCva81yG4DqSgqzPvqKnGbw/uKPuLjcVZoD2LotW8YMLkUBWUkOMdY+5hk09drdSPNT1QZ+xOJ7eCpH3r9pp3p8HhZqTCgx9KlQNwOCXQqy9N2Y6DJWT+t/XoXwpunvfi9UGYng4x5MOHRibQykhj7pqay4g==</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate</description></source><extra/></detail><detail><name>SSLDetails:D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E</name><value>issuer:1.2.840.113549.1.9.1=#726F6F74406C6F63616C686F73742E6C6F63616C646F6D61696E,CN=localhost.localdomain,OU=SomeOrganizationalUnit,O=SomeOrganization,L=SomeCity,ST=SomeState,C=--|serial:0B41|notBefore:20090602T161330|notAfter:20100602T161330</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Details</description></source><extra/></detail><detail><name>Cert:A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</name><value>x509:MIICQzCCAaygAwIBAgIJAOYmyCRSdRYsMA0GCSqGSIb3DQEBBQUAMFgxFDASBgNVBAsTC0lNQVAgc2VydmVyMRkwFwYDVQQDExBpbWFwLmV4YW1wbGUuY29tMSUwIwYJKoZIhvcNAQkBFhZwb3N0bWFzdGVyQGV4YW1wbGUuY29tMB4XDTA5MDYyMzIzNTM0MVoXDTEwMDYyMzIzNTM0MVowWDEUMBIGA1UECxMLSU1BUCBzZXJ2ZXIxGTAXBgNVBAMTEGltYXAuZXhhbXBsZS5jb20xJTAjBgkqhkiG9w0BCQEWFnBvc3RtYXN0ZXJAZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMXPR5wMuMkm5w5uMnIG2S8mQWy8VhOEiZXmw8VSv2z87jdOZL76Jt9aNn3FBWnFs3pCMTW5wjeIl+4lOmZ39Trpn3Vzinvs/DuDsEIvxikHaJw15bbiMsurKtCB4X2SQ6RWRN3Wa10Ldf9K2/haQ9j2rtP0D6aqc+zOu1M2duLBAgMBAAGjFTATMBEGCWCGSAGG+EIBAQQEAwIGQDANBgkqhkiG9w0BAQUFAAOBgQCVg9G8I9fxq6PCpobL0yd64PyKAoP2eBGWisWT4dqAw5eNHemqdIRbHNRc5SpSfusIhrKBi7tDP4qoBDmcH0Jx9Nudo1MupWH3obpEWzqHueH4FLuzlzJ/QXVIgFqUnwiRT7460Uk2xAZH5QY1z0H+0+yep/veWItOdir5gfWP8Q==</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate</description></source><extra/></detail><detail><name>SSLDetails:A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</name><value>issuer:1.2.840.113549.1.9.1=#706F73746D6173746572406578616D706C652E636F6D,CN=imap.example.com,OU=IMAP server|serial:00E626C8245275162C|notBefore:20090623T235341|notAfter:20100623T235341</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Details</description></source><extra/></detail><detail><name>SSLInfo</name><value>443::D1BBE04396B3DD5A5D0E76D84C4129277471F37BE124CD467E7DB7903F57A28E</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Information</description></source><extra/></detail><detail><name>SSLInfo</name><value>110::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Information</description></source><extra/></detail><detail><name>SSLInfo</name><value>993::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Information</description></source><extra/></detail><detail><name>SSLInfo</name><value>995::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Information</description></source><extra/></detail><detail><name>SSLInfo</name><value>143::A1853D1678B787CEC20EACD6455BB136A2C10CEEE6EA323CE7401653F16AC95B</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103692</name><description>SSL/TLS Certificate Information</description></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.10678</name><description/></source><extra/></detail><detail><name>ssh-key</name><value>22 ssh-dss AAAAB3NzaC1kc3MAAACBAIeEzeg+MDyR/1Bu11NyWe90Snd8Dn0NhvdVQBKdpchJsoGowB+RRkpVisp1UaNFyxml3QhIFiBvY48fuYIs7XQfe18VmBOCV0hRoY3WuThl2RrRQrf+Qua5nilIlK4kdnNOgEWR6DfsUnFUyj1VIMVTmytZks+L9FOOrFUBrhXLAAAAFQDBPe9aWKrG3PkkFEEgwimprYSf9wAAAIEAhYISgt4NZfx18VHmXordO4SP+gR/XmCuebnemCXG5yiqng7LXB0AF+xLkFR9GtOX8Cm1CofBJ98QD9dHy9/wOKO8hppimCR/6m+OQQziagsuDT6hreVGNXEWNhYpzic59sxzzcTmYWgj1/H02DTej21yeQCiiS2K8h1KGyBun5QAAACAWhwMP2RLCdNRbiMqJxRJaUi5PcYSW8UZrMwkFhU9kfM4JkdYMUMvIQWchBcLNYtZOlX8e1EAiiEdnn67KwE366ixlUcDnlgtvOHtjQckgOB843tn+9PHYJ+40ih7JN2tjlZnDGYAsFS0uuOcSLw/EnfZNF4poG6DK8r1H8cAZ6o=</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.100259</name><description>SSH Key</description></source><extra/></detail><detail><name>ssh-key</name><value>22 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwezoEgSNxCpj/fwGvj1482lhPhLfzVPXqeRxNCC/ZYm0GC6yhfIylgroE720kZX1kgIKTP8cNCgVpKvGSDeSXU5NWPv0s0TtfEZ5PSSPvPvgzDnSf3ZZlhTJh9pa0HUKOXHNLyrxiWm+BVoxiOrn+K+BZN9+bTw0GHM2PBt2VsN7J8vpHiZT8kzVQR+F/b/NrnomvW+SQhe8gFVhz6xJQ72a+EYgTLY2FsxonAcyHFzd9mc6Bo3NcuBZaN8vqUbVYJyTbkrV1jCM3aJOCGnp2rkLC8R1nmuFXRkLqzdN+9VuuyJhgdSARhzIxOszGw4q89HY8onViVymXMav/B7Gpw==</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.100259</name><description>SSH Key</description></source><extra/></detail><detail><name>cpe:/o:centos:centos:5</name><value>general/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.105937</name><description/></source><extra/></detail><detail><name>OS-Detection</name><value>cpe:/o:centos:centos:5</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.105937</name><description/></source><extra/></detail><detail><name>App</name><value>cpe:/a:dovecot:dovecot</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.113212</name><description/></source><extra/></detail><detail><name>cpe:/a:dovecot:dovecot</name><value>143/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.113212</name><description/></source><extra/></detail><detail><name>cpe:/a:dovecot:dovecot</name><value>993/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.113212</name><description/></source><extra/></detail><detail><name>cpe:/a:dovecot:dovecot</name><value>110/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.113212</name><description/></source><extra/></detail><detail><name>cpe:/a:dovecot:dovecot</name><value>995/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.113212</name><description/></source><extra/></detail><detail><name>cpe:/a:mysql:mysql:5.0.45</name><value>3306/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.100152</name><description>Service detection (1.3.6.1.4.1.25623.1.0.100152)</description></source><extra/></detail><detail><name>App</name><value>cpe:/a:mysql:mysql:5.0.45</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.100152</name><description>Service detection (1.3.6.1.4.1.25623.1.0.100152)</description></source><extra/></detail><detail><name>Services</name><value>3306,tcp,mysql</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.100152</name><description>Service detection (1.3.6.1.4.1.25623.1.0.100152)</description></source><extra/></detail><detail><name>cpe:/a:roundcube:webmail:0.2:ALPHA</name><value>/mail</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111027</name><description/></source><extra/></detail><detail><name>App</name><value>cpe:/a:roundcube:webmail:0.2:ALPHA</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111027</name><description/></source><extra/></detail><detail><name>cpe:/a:apache:http_server:2.2.3</name><value>443/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900498</name><description/></source><extra/></detail><detail><name>cpe:/a:apache:http_server:2.2.3</name><value>80/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900498</name><description/></source><extra/></detail><detail><name>App</name><value>cpe:/a:apache:http_server:2.2.3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900498</name><description/></source><extra/></detail><detail><name>Services</name><value>993,tcp,imap,An IMAP Server seems to be running on this port.</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.11414</name><description>Service detection (1.3.6.1.4.1.25623.1.0.11414)</description></source><extra/></detail><detail><name>Services</name><value>143,tcp,imap,An IMAP Server seems to be running on this port.</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.11414</name><description>Service detection (1.3.6.1.4.1.25623.1.0.11414)</description></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.11913</name><description/></source><extra/></detail><detail><name>Services</name><value>53,tcp,domain</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.108018</name><description>Service detection (1.3.6.1.4.1.25623.1.0.108018)</description></source><extra/></detail><detail><name>scanned_with_feedtype</name><value>Greenbone Community Feed</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103739</name><description>Host Scan End</description></source><extra/></detail><detail><name>scanned_with_scanner</name><value>9.0.3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103739</name><description>Host Scan End</description></source><extra/></detail><detail><name>scanned_with_feedversion</name><value>202007211413</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103739</name><description>Host Scan End</description></source><extra/></detail><detail><name>App</name><value>cpe:/a:php:php:5.2.6</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.800109</name><description/></source><extra/></detail><detail><name>cpe:/a:php:php:5.2.6</name><value>443/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.800109</name><description/></source><extra/></detail><detail><name>cpe:/a:php:php:5.2.6</name><value>80/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.800109</name><description/></source><extra/></detail><detail><name>Services</name><value>111,tcp,RPC/portmapper</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.11111</name><description>Service detection (1.3.6.1.4.1.25623.1.0.11111)</description></source><extra/></detail><detail><name>Services</name><value>679,tcp,RPC/status</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.11111</name><description>Service detection (1.3.6.1.4.1.25623.1.0.11111)</description></source><extra/></detail><detail><name>OS</name><value>Linux/Unix</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111068</name><description>SMTP/POP3/IMAP Server OS Identification</description></source><extra/></detail><detail><name>OS</name><value>cpe:/o:linux:kernel</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111068</name><description>SMTP/POP3/IMAP Server OS Identification</description></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.10878</name><description/></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103190</name><description/></source><extra/></detail><detail><name>Services</name><value>22,tcp,ssh,Remote SSH server banner: SSH-2.0-OpenSSH_4.3
+Remote SSH supported authentication: password,publickey
+Remote SSH text/login banner: (not available)
+
+This is probably:
+
+- OpenSSH
+
+Concluded from remote connection attempt with credentials:
+
+Login:    OpenVASVT
+Password: OpenVASVT</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.10267</name><description>Service detection (1.3.6.1.4.1.25623.1.0.10267)</description></source><extra/></detail><detail><name>cpe:/a:openbsd:openssh:4.3</name><value>22/tcp</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.108577</name><description/></source><extra/></detail><detail><name>App</name><value>cpe:/a:openbsd:openssh:4.3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.108577</name><description/></source><extra/></detail><detail><name>tcp_ports</name><value>110,111,143,22,3306,443,53,679,80,993,995</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900239</name><description>Check Open TCP Ports</description></source><extra/></detail><detail><name>ports</name><value>110,111,143,22,3306,443,53,679,80,993,995</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900239</name><description>Check Open TCP Ports</description></source><extra/></detail><detail><name>traceroute</name><value>192.168.1.14,109.116.67.1,83.224.40.126,83.224.40.125,83.224.40.225,83.224.40.229,185.210.48.25,4.69.161.126,* * *,195.154.2.197,51.158.3.9,212.83.175.116</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.51662</name><description>Traceroute</description></source><extra/></detail><detail><name>hostname</name><value>ctf11.root-me.org</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103997</name><description>Host Details</description></source><extra/></detail><detail><name>App</name><value>cpe:/a:phpmyadmin:phpmyadmin:3.0.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900129</name><description/></source><extra/></detail><detail><name>cpe:/a:phpmyadmin:phpmyadmin:3.0.0</name><value>/phpmyadmin</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.900129</name><description/></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111025</name><description/></source><extra/></detail><detail><name>TLS/993</name><value>SSLv3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/993</name><value>TLSv1.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/993</name><value>SSLv2</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/143</name><value>SSLv3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/143</name><value>TLSv1.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/143</name><value>SSLv2</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/110</name><value>SSLv3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/110</name><value>TLSv1.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/110</name><value>SSLv2</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/port</name><value>995</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/port</name><value>993</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/port</name><value>443</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/port</name><value>143</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/port</name><value>110</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/443</name><value>SSLv3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/443</name><value>TLSv1.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/995</name><value>SSLv3</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/995</name><value>TLSv1.0</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>TLS/995</name><value>SSLv2</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.103823</name><description>SSL/TLS: Version Detection Report</description></source><extra/></detail><detail><name>Services</name><value>111,tcp,rpc-portmap</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.108090</name><description>Service detection (1.3.6.1.4.1.25623.1.0.108090)</description></source><extra/></detail><detail><name>OS</name><value>CentOS</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111067</name><description>HTTP OS Identification</description></source><extra/></detail><detail><name>OS</name><value>cpe:/o:centos:centos:5</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111067</name><description>HTTP OS Identification</description></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.10793</name><description/></source><extra/></detail><detail><name>EXIT_CODE</name><value>EXIT_NOTVULN</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.10740</name><description/></source><extra/></detail><detail><name>best_os_cpe</name><value>cpe:/o:centos:centos:5</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111067;</name><description>HTTP OS Identification</description></source><extra/></detail><detail><name>best_os_txt</name><value>CentOS</value><source><type>nvt</type><name>1.3.6.1.4.1.25623.1.0.111067;</name><description>HTTP OS Identification</description></source><extra/></detail></host><host_start><host>212.83.175.116</host></host_start><host_end><host>212.83.175.116</host></host_end><scan_end>2020-08-30T16:00:03Z</scan_end><errors><count>0</count></errors><report_format/></report></report><filters id=''><term>apply_overrides=0 min_qod=70 first=1 rows=10 sort=name</term><keywords><keyword><column>apply_overrides</column><relation>=</relation><value>0</value></keyword><keyword><column>min_qod</column><relation>=</relation><value>70</value></keyword><keyword><column>first</column><relation>=</relation><value>1</value></keyword><keyword><column>rows</column><relation>=</relation><value>10</value></keyword><keyword><column>sort</column><relation>=</relation><value>name</value></keyword></keywords></filters><sort><field>name<order>ascending</order></field></sort><reports max='1000' start='1'/><report_count>4<filtered>1</filtered><page>1</page></report_count></get_reports_response>

@@ -1,0 +1,51 @@
+{
+    "owner": "admin",
+    "hosts": "1",
+    "vulns": "0",
+    "os": "0",
+    "apps": "0",
+    "ssl_certs": "0",
+    "timestamp": "2020-08-30 15:40:29 Coordinated Universal Time (UTC)",
+    "task": {
+        "id": "d0b4e515-d9ac-430a-96bb-b2b0d5a23087",
+        "name": "empty",
+        "comment": "comment",
+        "target id": "e4a233d9-6434-4364-9ebc-8a18013b29b7"
+    },
+    "ports": {},
+    "results": {},
+    "results_count": {
+        "full": "0",
+        "filtered": "0",
+        "debug": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "hole": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "info": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "log": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "warning": {
+            "full": "0",
+            "filtered": "0"
+        },
+        "false_positive": {
+            "full": "0",
+            "filtered": "0"
+        }
+    },
+    "max_severity_full": "-99.0",
+    "max_severity_filtered": "-99.0",
+    "vuln_details": [],
+    "errors": {
+        "count": "0"
+    }
+}
