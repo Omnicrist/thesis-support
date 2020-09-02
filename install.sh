@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### A MANO ###
+### MANUALLY ###
 ### mkdir /home/alarm/.ssh
 ### ssh-keygen -f ~/.ssh/alarm
 ### cat ~/.ssh/alarm.pub > ~/.ssh/authorized_keys
@@ -64,10 +64,16 @@ ssh -i alarm alarm@raspberry << EOF
     
     sudo wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/greenbone-security-assistant.service -O /usr/lib/systemd/system/greenbone-security-assistant.service
     sudo wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/openvas-manager.service -O /usr/lib/systemd/system/openvas-manager.service
+    sudo rm -f /usr/lib/systemd/system/openvas-scanner.service
+    sudo wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/openvas-scanner.service -O /usr/lib/systemd/system/openvas-scanner.service
     wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/openvas-start -O ~/openvas-start
     wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/openvas-stop -O ~/openvas-stop
     sudo wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/openvassd.conf -O /etc/openvas/openvassd.conf
     chmod +x ~/openvas-start ~/openvas-stop
+
+    sudo systemctl enable openvas-manager
+    sudo systemctl enable openvas-scanner
+    sudo systemctl enable greenbone-security-assistant
 
     sudo systemctl daemon-reload
 
@@ -119,6 +125,15 @@ ssh -i alarm alarm@raspberry << EOF
     sudo echo 'export HOSTNAME=alarmpi' >> /home/alarm/.bashrc
     sudo echo 'alias msfconsole=/opt/metasploit/msfconsole' >> /home/alarm/.bashrc
     source /home/alarm/.bashrc
+
+    sudo pacman -S python-pip
+    pip3 install pymetasploit3
+    sudo pip3 install pymetasploit3
+    sudo wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/msfrpcd.service -O /usr/lib/systemd/system/msfrpcd.service
+    wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/msfrpcd-start -O ~/msfrpcd-start
+    wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/msfrpcd-stop -O ~/msfrpcd-stop
+
+    sudo systemctl enable msfrpcd
 
     msfconsole
 EOF
