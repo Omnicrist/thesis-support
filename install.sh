@@ -8,7 +8,7 @@
 ### exit
 ### scp alarm@raspberry:/home/alarm/.ssh/alarm ~/Scrivania/alarm
 
-ssh -i alarm alarm@raspberry << EOF
+ssh -i ~/Scrivania/alarm alarm@raspberry << EOF
     export TERM=xterm-256color
     export SHELL=/bin/bash
     echo "root" | su root -c "pacman-key --init"
@@ -26,7 +26,7 @@ EOF
 
 sleep 45
 
-ssh -i alarm alarm@raspberry << EOF
+ssh -i ~/Scrivania/alarm alarm@raspberry << EOF
     export TERM=xterm-256color
     export SHELL=/bin/bash
     curl -O https://blackarch.org/strap.sh
@@ -134,6 +134,4 @@ ssh -i alarm alarm@raspberry << EOF
     wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/msfrpcd-stop -O ~/msfrpcd-stop
 
     sudo systemctl enable msfrpcd
-
-    msfconsole
 EOF
