@@ -361,7 +361,7 @@ MSF_PASSWD = "msf"
 
 # Variabili riguardanti il time-management per
 # l'interfacciamento dei sistemi.
-SLEEP_TIME = 0.5
+SLEEP_TIME = 0.75
 SLEEP_BEFORE_EXITING_TIME = SLEEP_TIME * 15
 
 # Percorso dove il programma viene eseguito
