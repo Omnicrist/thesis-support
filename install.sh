@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### MANUALLY ###
+### A MANO ###
 ### mkdir /home/alarm/.ssh
 ### ssh-keygen -f ~/.ssh/alarm
 ### cat ~/.ssh/alarm.pub > ~/.ssh/authorized_keys
@@ -134,4 +134,6 @@ ssh -i ~/Scrivania/alarm alarm@raspberry << EOF
     wget https://raw.githubusercontent.com/Omnicrist/thesis-support/master/msfrpcd-stop -O ~/msfrpcd-stop
 
     sudo systemctl enable msfrpcd
+
+    msfconsole
 EOF
