@@ -16,7 +16,7 @@ def get_parser():
     Crea e restituisce il parser dei parametri inseriti a linea di comando.
     """
     parser = ArgumentParser(
-        description='Request CVEs to CIRCL's API out of a '
+        description='Request CVEs to CIRCL\'s API out of a '
                     '.cve-parsed file created by cve_extractor.py')
     parser.add_argument('--input', required=True,
                         help='Input file')
